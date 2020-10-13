@@ -20,7 +20,7 @@ script: "./gradlew build"
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: 9ef8b9d8bcdebdfa66cd218ee543a53b9c00e126  # Set in the settings page of your repository, as a secure variable
+  github_token: $token  # Set in the settings page of your repository, as a secure variable
   keep_history: true
   on:
     branch: master
